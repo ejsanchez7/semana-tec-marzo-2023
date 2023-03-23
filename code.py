@@ -1,6 +1,7 @@
-x = True
+x = 10
+y = 20
 
-if x :
-    print("verdadero")
+if x + y > 25 :
+    print("mayor")
 else :
-    print("falso")
+    print("menor")
