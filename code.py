@@ -1,6 +1,7 @@
-x = False
+x = 10
+y = 20
 
-if x :
+if x + y > 25 :
     print("true")
 else :
     print("false")
