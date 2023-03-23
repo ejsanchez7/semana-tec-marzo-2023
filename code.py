@@ -1,6 +1,6 @@
 x = False
 
 if x :
-    print("verdadero")
+    print("true")
 else :
-    print("falso")
+    print("false")
