@@ -1,21 +1,22 @@
 import random
 
-#Límite de intentos
+# Límite de intentos
 triesLimit = 10
 tries = 0
 
-print(f'\nBienvenido, el sistema "pensará" un número entre N y M y deberás adivinarlo. Contarás con {triesLimit} intentos para lograrlo\n')
+print('\nBienvenido, el sistema "pensará" un número entre N y M y deberás '
+      'adivinarlo. Contarás con {triesLimit} intentos para lograrlo\n')
 
-#Determinar el límite inferior y superior
+# Determinar el límite inferior y superior
 bottom = int(input("Introduce el valor de N: "))
 top = int(input("Introduce el valor de M: "))
 
 print("\n")
 
-#Calcular el número
+# Calcular el número
 number = random.randint(bottom, top)
 
-#Solicitar el número
+# Solicitar el número
 guess = -1
 
 while guess != number and tries < triesLimit:
@@ -34,6 +35,8 @@ while guess != number and tries < triesLimit:
     print(f"Intentos disponibles: {triesLimit - tries}\n")
 
 if tries == 0:
-    print("Has alcanzado el número permitido de intentos, suerte para la próxima!\n")
+    print("Has alcanzado el número permitido de intentos, suerte para la "
+          "próxima!\n")
 else:
-    print(f'\nFelicidades! adivinaste el número "{number}" en {tries} intentos!\n')
+    print(f'\nFelicidades! adivinaste el número "{number}" en {tries} '
+          'intentos!\n')
